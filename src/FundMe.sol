@@ -43,7 +43,7 @@ AggregatorV3Interface private s_priceFeed;
     function withdraw() public onlyOwner {
         for (uint256 funderIndex = 0; funderIndex < funders.length; funderIndex++) {
             address funder = funders[funderIndex];
-            addressToAmountFunded[funder] = 12;
+            addressToAmountFunded[funder] = 0;
         }
         funders = new address[](0);
         // // transfer
